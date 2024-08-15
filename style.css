@@ -1,0 +1,308 @@
+*{
+    margin: 0px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(98, 130, 160);
+    height: 100px;
+}
+.logo{
+    width: 130px;
+}
+.navbar a{
+    text-decoration: none;
+    color: rgb(35, 35, 85);
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 40px;
+}
+#check{
+    display: none;
+}
+#icons{
+    color: rgb(54, 54, 97);
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    position: absolute;
+    right: 5%;
+    display: none;
+}
+#main{
+    background: url(./images/yoga7.webp);
+    height: 90vh;
+    text-align: center;
+}
+#main h1{
+    padding-top: 100px;
+    font-size: 80px;
+    color: rgb(20, 20, 55);
+}
+#main span{
+    font-size: 30px; 
+    display: block;
+    margin-top: 30px; 
+    color: rgb(39, 39, 78); 
+}
+.mainbutt{
+    background-color: rgb(37, 37, 77);
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+    margin-left: 900px;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+#services{
+    display: grid;
+    grid-template-columns: repeat(3,500px);
+    grid-template-rows: auto auto;
+    margin: 100px 260px  0px;
+    row-gap: 15px;
+    column-gap: 15px;
+    margin-bottom: 100px;
+}
+.a{
+    background-color: aqua;
+    height: 700px;
+    background: url(./images/yog4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.b{
+    height: 500px;
+    background: url(./images/yog3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c{
+    height: 800px;
+    background: url(./images/yog6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.d{
+    height: 400px;
+    margin-top: -110px;
+    background: url(./images/yog7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.e{
+    height: 600px;
+    margin-top: -310px;
+    background: url(./images/yog1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.f{
+    height: 300px;
+    margin-top: -10px;
+    background: url(./images/yoga2);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 50px;
+    color: rgb(37, 37, 84);
+    margin-top: 140px;
+}
+#about{
+    margin-bottom: -50px;
+}
+#about p{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(49, 49, 102);
+}
+.back{
+    margin-left: 650px;
+    margin-bottom: 20px;
+}
+.grid{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.grimg{
+    width: 500px;
+    height: 500px;
+}
+.grimg1{
+    width: 400px;
+    height: 300px;
+}
+.content h1{
+    font-size: 38px;
+    color: #1d172f;
+}
+.content p{
+    font-size: 25px;
+    color: #3c2f60;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    height: 30vh;
+    background-color: aliceblue;
+}
+footer span{
+    font-size: 25px;
+}
+footer a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #3c2f60;
+}
+footer h1{
+    margin-bottom: 40px;
+}
+@media (max-width:760px)
+{
+    #icons{
+        display: flex;
+    }
+    #closeicon{
+        display: none;
+    }
+    #check:checked~#icons #menuicon{
+        display: none;
+    }
+    #check:checked~#icons #closeicon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        background-color: gainsboro;
+        display: none;
+    }
+    #check:checked~.navbar{
+        display: block;
+    }    
+    .navbar a{
+        display: block;
+        text-align: center;
+        margin: 1.5rem 0px;
+    }
+
+    .head{
+        font-size: 30px;
+        color: rgba(49, 38, 38, 0.56);
+        padding-top: 10px;
+    }
+    #main{
+        height: 40vh;
+    }
+
+    #main h1{
+        font-size: 30px;
+        color: #3c2f60;
+    }
+    #main span{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #main a{
+        margin-left: 240px;
+    }
+    .mainbutt{
+        font-size: 15px;
+    }
+    #services{
+        display: block;
+        height: 450vh;
+    }
+    #about{
+        height: 100vh;
+    }
+    .a{
+        width: 720px;
+        margin-left: -250px;
+        margin-top: -90px;
+        height: 900px;
+    }
+    .b{
+        width: 820px;
+        margin-left: -350px;
+        height: 900px;  
+    }
+    .c{
+         width: 720px;
+         margin-left: -250px;
+         margin-top: -90px;
+         height: 900px;
+    }
+    .d{
+        width: 720px;
+        margin-left: -250px;
+        margin-top: -90px;
+        height: 900px;
+    }
+    .e{
+        width: 720px;
+        margin-left: -250px;
+        margin-top: -90px;
+        height: 860px;
+    }
+    .f{
+        display: none;
+    }
+    .back{
+        margin-left: -30px;
+    }
+    #about p{
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(94, 88, 88);
+    }
+    #pose{
+        height: 430vh;
+    }
+    .content p{
+        font-size: 20px;
+        color: rgb(97, 93, 93);
+        font-weight: 600;
+    }
+    .content h1{
+        font-size: 25px;
+        color: rgb(71, 69, 69);
+        font-weight: 600;
+    }
+    footer{
+        height: 30vh;
+        margin-top: 520px;
+    }
+    footer h1{
+        font-size: 20px;
+        color: #3c2f60;
+    }
+    footer a{
+        font-size: 10px;
+        color: #4f456b;
+    }
+    footer span{
+        font-size: 10px;
+        color: #4f456b;
+    }
+    i{
+        display: none;
+    }
+    .lst{
+        display: none;
+    }
+    #main{
+        background: none;
+    }
+}
